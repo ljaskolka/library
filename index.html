@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div class="header">
+        <div class="header-bg"></div>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="books logo" class="logo"> 
+            <p class="header-item your-library">Your Library</p>
+        </div>
+    </div>
+
+    <div class="add">
+        <button class="add-button" id="add">Add book</button>
+    </div>
+
+    <div class="container">
+        <form id="book-form" onsubmit="return false;">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" id="author" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="pages">Pages</label>
+                <input type="text" id="pages" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="image">Image Url</label>
+                <input type="text" id="image" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="read">Read</label>
+                <input type="checkbox" id="read" class="form-control">
+            </div>
+            <input type="submit" value="+" class="submit-button add-button">
+        </form>
+    </div>
+
+    <div class="table" id="table"></div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
